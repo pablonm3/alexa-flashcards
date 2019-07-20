@@ -1,0 +1,165 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "flashcard maid",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "addIntent",
+          "slots": [
+            {
+              "name": "WORD",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{WORD}"
+              ]
+            },
+            {
+              "name": "VALUE",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{VALUE}"
+              ]
+            }
+          ],
+          "samples": [
+            "add concept {WORD}",
+            "add {WORD}",
+            "remember concept {WORD}",
+            "create card for {WORD}",
+            "create card {WORD}",
+            "create card for concept {WORD}",
+            "create flashcard for {WORD}",
+            "create flashcard {WORD}",
+            "create flashcard for concept {WORD}"
+          ]
+        },
+        {
+          "name": "practiceIntent",
+          "slots": [],
+          "samples": [
+            "practice",
+            "let's practice",
+            "next card",
+            "what's my next card"
+          ],
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.SearchQuery"
+            }
+          ]
+        },
+        {
+          "name": "answerIntent",
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "is it {answer}",
+            "it is {answer}",
+            "it's {answer}",
+            "it means {answer}",
+            "the answer is {answer}",
+            "the concept is {answer}",
+            "the meaning is {answer}",
+            "{answer} is my answer",
+            "is my answer is {answer}"
+          ]
+        },
+        {
+          "name": "testIntent",
+          "samples": [
+            "hello",
+            "test"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "addIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "WORD",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1233011468340.1349943484623"
+              }
+            },
+            {
+              "name": "VALUE",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1233011468340.1349943484622"
+              }
+            }
+          ]
+        },
+        {
+          "name": "practiceIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "answer",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1233011468340.1349943484623",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what word or expression you want to add?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1233011468340.1349943484622",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "say a few words that will help you remember the concept"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "24"
+}
