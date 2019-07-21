@@ -263,7 +263,7 @@ const HelpHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
-            .reprompt() // use reprompt here to keep session opened, not sure why it gets closed when removing it
+            .reprompt(speakOutput) // use reprompt here to keep session opened, not sure why it gets closed when removing it
             .getResponse();
     },
 };

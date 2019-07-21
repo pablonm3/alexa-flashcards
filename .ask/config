@@ -18,7 +18,7 @@
             "codeUri": "lambda/us-east-1_vocabularyMaid2",
             "functionName": "vocabularyMaid2",
             "handler": "index.handler",
-            "revisionId": "67e6b349-fa57-4008-b025-e1670ccc8bab",
+            "revisionId": "dedd4789-1593-4a42-9b63-2b77b32dff7c",
             "runtime": "nodejs10.x"
           }
         ],
