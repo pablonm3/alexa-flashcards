@@ -10,12 +10,41 @@
       }
     },
     "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "name": "vocabularyMaid2"
+          "name": "flashcards",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/a782/340c340c6e9e4b31a930439db2b639bf/APP_ICON?versionId=0qnVArf8ItTrCdUyq0vqSGgPbzQYCm5q&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190721T004347Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20190721%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2046e91a19977b827220751de08980d64db4e43e0a3f0cbd1c3f8b672eeaeaa2",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/278f/a568eb20987c4fb58efb58eb5d7e7e95/APP_ICON_LARGE?versionId=7VUzVGZjGqqWNlQzNBJns_d2yO93og2z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190721T004347Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20190721%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fff48fc65b4c18c2c795cad98526eeccafafabaa83cdf1c13e31054772eccea9",
+          "summary": "Create your own flashcards and have alexa help you to practice them at the right time",
+          "description": "Create your own flashcards to help you remember any concept by just saying \"alexa ask flashcard maid to add CONCEPT_NAME\" alexa will then ask you for a detailed description of the concept and store your card. when you want to practice just say \"alexa tell flashcard maid to practice\" and it will ask you questions about the cards you created, the skill uses an algorithm called spaced repetition to calculate when it's the perfect time to practice your concepts.\nexample 1:\n - Me: \"Alexa tell flashcard maid to add hugo chavez\"\n - Alexa: \"say a few words that will help you remember the concept\"\n  -Me: \"ex president of venezuela.\"\n  -Alexa: \"card created succesfully\"\n\nexample 2:\n - Me: \"alexa tell flashcard maid to practice\"\n - Alexa:  \"with which concept do you associate the following sentence? hugo chavez\"\n - Me:  \"ex president of venezuela\"\n - Alexa: \"You got it baby. There are no cards left to practice, check again tomorrow, baby\"",
+          "examplePhrases": [
+            "Alexa tell flashcard maid to practice",
+            "Alexa tell flashcard maid to add concept BLANK",
+            "Alexa open flashcard maid"
+          ],
+          "keywords": [
+            "flashcard",
+            "spaced-repetition",
+            "languages"
+          ]
         }
-      }
+      },
+      "isAvailableWorldwide": true,
+      "distributionMode": "PUBLIC",
+      "testingInstructions": "just say the commands described in the description, when you create a new flashcard need to wait 24hr before it's available for practice",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
     }
   }
 }

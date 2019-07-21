@@ -6,7 +6,7 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "e9966f85eeddf4dff470ee39598b2ec2"
+          "eTag": "4e7b0359e743f385fd959dca1b5619f8"
         },
         "lambda": [
           {
@@ -18,7 +18,7 @@
             "codeUri": "lambda/us-east-1_vocabularyMaid2",
             "functionName": "vocabularyMaid2",
             "handler": "index.handler",
-            "revisionId": "d9962732-6145-46df-b62d-de1b85833e5e",
+            "revisionId": "67e6b349-fa57-4008-b025-e1670ccc8bab",
             "runtime": "nodejs10.x"
           }
         ],
