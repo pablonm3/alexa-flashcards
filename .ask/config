@@ -6,7 +6,7 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "4e7b0359e743f385fd959dca1b5619f8"
+          "eTag": "f71314bef0dd739ae6a722020b441edb"
         },
         "lambda": [
           {
@@ -18,13 +18,13 @@
             "codeUri": "lambda/us-east-1_vocabularyMaid2",
             "functionName": "vocabularyMaid2",
             "handler": "index.handler",
-            "revisionId": "dedd4789-1593-4a42-9b63-2b77b32dff7c",
+            "revisionId": "dde4df68-12d3-4c71-a3ee-94e9b2218e1f",
             "runtime": "nodejs10.x"
           }
         ],
         "interactionModel": {
           "en-US": {
-            "eTag": "40f515b5c82ee7cbe84338709946a6e5"
+            "eTag": "ee65486c3e601e99c19319b9be7dc830"
           }
         }
       }

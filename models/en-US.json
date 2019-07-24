@@ -40,6 +40,7 @@
           "samples": [
             "add concept {WORD}",
             "add {WORD}",
+            "add word {WORD}",
             "remember concept {WORD}",
             "create card for {WORD}",
             "create card {WORD}",
